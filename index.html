@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+		.container{
+			overflow: hidden;
+		
+			border: 1px solid #000;
+			height: 450px;
+			position: relative;
+		}
+		
+		.inner{
+			position: relative;
+			left: 0;
+			top: 0;
+			width: 100%;
+			
+		}
+		.inner :hover{
+			cursor: pointer
+		}
+		.inner p{
+			padding: 10px 0; 
+			text-align: center;
+		}
+		.inner p:hover{
+			background: #f1f1f1;
+		}
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/extend.js"></script>
+		<script type="text/javascript" src="js/DragDrop.js"></script>
+		<script type="text/javascript" src="js/RangDragDrop.js"></script>
+		<script type="text/javascript" src="js/AxisDragDrop.js"></script>
+		<script type="text/javascript" src="js/ResizeDragDrop.js"></script>
+		<script type="text/javascript" src="js/ImageCrop.js"></script>
+		
+		<!-- 模拟overflow : scroll  -->
+		<script type="text/javascript" src="js/EaseAmountDra.js" ></script>
+		
+		<div class="container">
+			<div class="inner">
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				<p>scroll list item</p>
+				
+			</div>
+		</div>
+	
+		<script type="text/javascript">
+			
+			
+			var move = document.querySelector(".inner");
+			
+				var drag = new EaseAmountDrag(move);
+				
+				
+				
+			
+		</script>
+	</body>
+
+</html>
